@@ -39,9 +39,15 @@ def response(text):
 text = input("Enter String: ")
 response(text)
 
-Que5. Import the math module in whatever way you prefer. Call its sqrt function on the number 13689 and print that value to the console.
-from math import sqrt
-print (sqrt(13689))
+Que5. Write a Python function that prints out the first n rows of Pascal's triangle. Note : Pascal's triangle is an arithmetic and geometric figure first imagined by Blaise Pascal.
+def pascal_triangle(n):
+ trow = [1]
+ y = [0]
+ for x in range(max(n,0)):
+ print(trow)
+ trow=[l+r for l,r in zip(trow+y, y+trow)]
+ return n>=1
+pascal_triangle(6)
 
 Que6. Rewrite your pay computation program (previus chapter) with time-and-a-half for overtime and create a function called computepay which takes two parameters (hours and rate).
 def computepay(hours,rate):
