@@ -1,10 +1,12 @@
-Que1. Write a Python program to convert radian to degree?
+#Que1. Write a Python program to convert radian to degree?
+
 pi=22/7
 radian = float(input("Input radians: "))
 degree = radian*(180/pi)
 print(degree)
+-----------------------------------------------------------------------------------------------------
+#Que2. Write a Python program to calculate surface volume and area of a cylinder?
 
-Que2. Write a Python program to calculate surface volume and area of a cylinder?
 pi=22/7
 height = float(input('Height of cylinder: '))
 radian = float(input('Radius of cylinder: '))
@@ -12,8 +14,9 @@ volume = pi * radian * radian * height
 sur_area = ((2*pi*radian) * height) + ((pi*radian**2)*2)
 print("Volume is: ", volume)
 print("Surface Area is: ", sur_area)
+-------------------------------------------------------------------------------------------------------
+#Que3. Write a Python program to calculate arc length of an angle?
 
-Que3. Write a Python program to calculate arc length of an angle?
 def arclength():
     pi=22/7
     diameter = float(input('Diameter of circle: '))
@@ -26,15 +29,17 @@ def arclength():
 
 arclength()
 
+-------------------------------------------------------------------------------------------------------------
+#Que4. Write a Python program to calculate surface volume and area of a sphere?
 
-Que4. Write a Python program to calculate surface volume and area of a sphere?
 pi=22/7
 radian = float(input('Radius of sphere: '))
 sur_area = 4 * pi * radian **2
 volume = (4/3) * (pi * radian ** 3)
 print("Surface Area is: ", sur_area)
 print("Volume is: ", volume)
+--------------------------------------------------------------------------------------------------------------------------------------------
+#Que5. Import the math module in whatever way you prefer. Call its sqrt function on the number 13689 and print that value to the console.
 
-Que5. Import the math module in whatever way you prefer. Call its sqrt function on the number 13689 and print that value to the console.
 from math import sqrt
 print(sqrt(13689))
