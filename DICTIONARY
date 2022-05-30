@@ -1,0 +1,81 @@
+#Que1. User input dictionary.
+
+students={}
+for i in range(3):
+    name=input("Enter the name")
+    age=input("Enter the age")
+    students[name]=age
+print(students)
+-------------------------------------------------------------------------------------------------------------------------------
+#Que2. To print all unique value in a dictionary.
+
+d1=[{"V":"S001"}, {"V": "S002"}, {"VI": "S001"}, {"VI": "S005"}, {"VII":"S005"},{"V":"S009"},{"VIII":"S007"}]
+print("Original List",d1)
+u_value = set( val for dic in d1 for val in dic.values())
+print('Unique Values:',u_value)
+-------------------------------------------------------------------------------------------------------------------------------
+#Que3. To check whether a key is given or not.
+
+y={"Tushar":1,"Saha":2,"color":"blue","colour":"black"}
+if "colourr" in y:
+    print("yes")
+else:
+    print("no")
+------------------------------------------------------------------------------------------------------------------------------
+#Que4. Sum of all the items in the dictionary.
+
+y={1:1,2:4,3:9,4:16}
+x=sum(y.keys())
+z=sum(y.values())
+print(x)
+print(z)
+-------------------------------------------------------------------------------------------------------------------------------
+#Que5. Sort dictionary by key.
+
+y={1:1,4:16,3:9,2:4}
+a=list(y.keys())
+a.sort()
+print("sorted key of a dictionary is",a)
+print("Original dictionary",y)
+-------------------------------------------------------------------------------------------------------------------------------
+#Que6. Remove duplicates from a dictionary.
+
+y={'a':1,'b':22,'a':3,'c':22}
+temp=[]
+res=dict()
+for key,val in y.items():
+    if val not in temp:
+        temp.append(val)
+        res[key]=val
+print(res)
+-------------------------------------------------------------------------------------------------------------------------------
+#Que7. Print the key value and item.
+
+y={"tushar": 1,"saha":2}
+x=y.keys()
+print(x)
+z=y.values()
+print(z)
+print(y.items())
+-------------------------------------------------------------------------------------------------------------------------------
+#Que8. Multiply all the items in a dictionary.
+
+y={1:1,2:4,3:9,4:16}
+a=1
+for i in y:
+    a=a*y[i]
+    print(a)
+-------------------------------------------------------------------------------------------------------------------------------
+#Que9. iterate over dictionaries using for loop.
+
+y={"tushar":1,"saha":2}
+for i in y.items():
+    print(i)
+-------------------------------------------------------------------------------------------------------------------------------
+#Que10. Print min and max value in a dictionary.
+
+y={1:1,4:16,3:9,2:4}
+c=max(y.values())
+d=min(y.values())
+print(c)
+print(d)
