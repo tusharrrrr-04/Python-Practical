@@ -1,0 +1,125 @@
+#Que1. Define a function that accepts roll number and returns whether the student is present or absent.
+
+def detail(roll):
+    x = [23,43,22,56]
+    if roll in x:
+        print(f"Roll number {roll} is present")
+    else:
+        print(f"Roll number {roll} is absent")
+roll = int(input("Enter roll no. "))
+detail(roll)
+----------------------------------------------------------------------------------------------------------------------
+#Que2. Define a function which counts vowels and consonant in a word.
+
+def count(val):
+    vov = 0
+    con = 0
+    for i in range(len(val)):
+        if val[i] in ['a','e','i','o','u']:
+            vov = vov+1
+        else:
+            con = con + 1
+    print("Count of vowels is ",vov)
+    print("Count of consonant is ",con)
+x = input("Enter Value: ")
+count(x)
+------------------------------------------------------------------------------------------------------------
+#Que3. Define a function that returns Factorial of a number.
+
+def factorial(num):
+    fact = 1
+    while(num!=0):
+        fact *= num
+        num = num - 1
+    print("Factorial is",fact)
+num = int(input("Enter number "))
+factorial(num)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Que4. Define a function that accepts lowercase words and returns uppercase words.
+
+def response(text):
+    z = text.upper()
+    print(z)
+text = input("Enter String: ")
+response(text)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Que5. Write a Python function that prints out the first n rows of Pascal's triangle. Note : Pascal's triangle is an arithmetic and geometric figure first imagined by Blaise Pascal.
+
+def pascal_triangle(n):
+ trow = [1]
+ y = [0]
+ for x in range(max(n,0)):
+ print(trow)
+ trow=[l+r for l,r in zip(trow+y, y+trow)]
+ return n>=1
+pascal_triangle(6)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Que6. Rewrite your pay computation program (previus chapter) with time-and-a-half for overtime and create a function called computepay which takes two parameters (hours and rate).
+
+def computepay(hours,rate):
+    if hours < 40:
+        pay=hours*rate
+        print ("the pay is:", pay)
+    else:
+        pay = 40 * rate + (hours-40)*1.5*rate
+        print ("the pay is:", pay)
+
+hours=input("Enter worked hours:")
+hours=float(hours)
+rate=10
+computepay(hours,rate)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Que7. Write a Python program to reverse a string.
+
+Sample String: "1234abcd"
+Expected Output: "dcba4321"
+def string_reverse(str1):
+    rstr1 = ''
+    index = len(str1)
+    while index > 0:
+        rstr1 += str1[ index - 1 ]
+        index = index - 1
+    return rstr1
+print(string_reverse('1234abcd'))
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Que8. : Write a Python function that accepts a string and calculate the number of upper case letters and lower case letters.
+
+Sample String : 'The quick Brow Fox'
+Expected Output :
+No. of Upper case characters : 3
+No. of Lower case Characters : 12
+def string_test(s):
+    d={"UPPER_CASE":0, "LOWER_CASE":0}
+    for c in s:
+        if c.isupper():
+            d["UPPER_CASE"]+=1
+        elif c.islower():
+            d["LOWER_CASE"]+=1
+        else:
+            pass
+    print ("Original String : ", s)
+    print ("No. of Upper case characters : ", d["UPPER_CASE"])
+    print ("No. of Lower case Characters : ", d["LOWER_CASE"])
+string_test('The quick Brown Fox')
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Que9.Write a Python function that takes a list and returns a new list with unique elements of the first list.
+
+Sample List : [1,2,3,3,3,3,4,5]
+Unique List : [1, 2, 3, 4, 5]
+def unique_list(l):
+    x = []
+    for a in l:
+        if a not in x:
+            x.append(a)
+    return x
+print(unique_list([1,2,3,3,3,3,4,5]))
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Que10.  Write a Python function to check whether a number is perfect or not.
+
+def perfect_number(n):
+    sum = 0
+    for x in range(1, n):
+        if n % x == 0:
+            sum += x
+    return sum == n
+print(perfect_number(6))
