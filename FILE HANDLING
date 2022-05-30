@@ -1,0 +1,36 @@
+#Que1. WAP in python to read first n line using file handling.
+
+file_1=open('demo.txt','r')
+n=int(input('enter how many line do you want to read'))
+for i in range(n):
+    line=file_1.readline()
+    print(line)
+--------------------------------------------------------------------------    
+#Que2. WAP in python to read entire text using file handling.
+
+file_1=open('demo.txt','r')
+print(file_1.read())
+------------------------------------------------------------------------------
+#Que3. To read number of line.
+
+file_1 = open("demo.txt",'r')
+L = file_1.readlines()
+print(len(L))
+-------------------------------------------------------------------------------
+#Que4. WAP in python to replace word using file handling.
+
+file_1=open('demo.txt','r')
+a=input('enter word to be replaced')
+b=input('enter the replacing word')
+s=file_1.read()
+a=s.replace(a,b)
+print(a)
+-------------------------------------------------------------------------------
+#Que5. To make the swapcase file of a file.
+
+file_1 = open("demo.txt",'r')
+file_2 = open("swap.txt",'w')
+text=file_1.read()
+c = text.swapcase()
+swap = file_2.write(c)
+print(c)
