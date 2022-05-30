@@ -1,4 +1,5 @@
-Que1. ELse clause with try-except.
+#Que1. ELse clause with try-except.
+
 def Clause(a , b):
     try:
         c = ((a+b) / (a-b))
@@ -12,8 +13,9 @@ def Clause(a , b):
 x=float(input("enter 'x':"))
 y=float(input("enter 'y':"))
 Clause (x , y)
+-------------------------------------------------------------------------------
+#Que2.WAP in Python code to illustrate.
 
-Que2.WAP in Python code to illustrate.
 def divide(x, y):
     try:
         result = x // y
@@ -22,8 +24,9 @@ def divide(x, y):
         print("Sorry ! You are dividing by zero ")
  
 divide(3, 2)
+------------------------------------------------------------------------------
+#Que3. Multiple errors with one.
 
-Que3. Multiple errors with one.
 def fun(a):
     if a < 4:
         b = a/(a-3)
@@ -38,8 +41,9 @@ except ZeroDivisionError:
     
 except NameError:
     print("NameError Occurred and Handled")
-	
-Que4. Raise arithematic operation.
+-------------------------------------------------------------------------------	
+#Que4. Raise arithematic operation.
+
 try:  
     a = 10/0  
     print (a)
@@ -49,8 +53,9 @@ except ArithmeticError:
 
 else:  
     print ("Success.")
-	
-Que5. Simple runtime error.
+--------------------------------------------------------------------------------	
+#Que5. Simple runtime error.
+
 a = [1, 2, 3]
 try:
 	print ("Second element = %d" %(a[1]))
