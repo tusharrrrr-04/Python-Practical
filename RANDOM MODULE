@@ -1,0 +1,49 @@
+#Que1. Generate 3 random integers between 100 and 999 which is divisible by 5.
+
+import random
+
+print("Generating 3 random integer number between 100 and 999 divisible by 5")
+for num in range(3):
+    print(random.randrange(100, 999, 5), end=', ')
+------------------------------------------------------------------------------------------	
+#Que2. Roll dice in such a way that every time you get the same number.
+
+import random
+
+dice = [1, 2, 3, 4, 5, 6]
+print("Randomly selecting same number of a dice")
+for i in range(5):
+    random.seed(25)
+    print(random.choice(dice))
+-------------------------------------------------------------------------------------------
+#Que3. Calculate multiplication of two random float numbers.
+
+import random
+
+num1  = random.random()
+print("First Random float is ", num1)
+num2 = random.uniform(9.5, 99.5)
+print("Second Random float is ", num1)
+
+num3 = num1 * num2
+print("Multiplication is ", num3)
+-------------------------------------------------------------------------------------------
+#Que4. Pick a random character from a given String.
+
+import random
+
+name = 'pynative'
+char = random.choice(name)
+print("random char is ", char)
+-------------------------------------------------------------------------------------------
+#Que5. Generate random String of length 5.
+
+import random
+import string
+
+def randomString(stringLength):
+    """Generate a random string of 5 charcters"""
+    letters = string.ascii_letters
+    return ''.join(random.choice(letters) for i in range(stringLength))
+
+print ("Random String is ", randomString(5) )
