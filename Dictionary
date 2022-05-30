@@ -47,7 +47,7 @@ for key,val in y.items():
 print(res)
 
 Que7. Print the key value and item.
-y={"Ayush": 1,"Deepti":2}
+y={"tushar": 1,"saha":2}
 x=y.keys()
 print(x)
 z=y.values()
@@ -62,7 +62,7 @@ for i in y:
     print(a)
     
 Que9. iterate over dictionaries using for loop.
-y={"ayush":1,"deepti":2}
+y={"tushar":1,"saha":2}
 for i in y.items():
     print(i)
     
